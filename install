@@ -1,0 +1,48 @@
+clear
+echo "ANDIELIS"
+echo "----------__________-----------"
+echo "author    : andi"
+echo "youtube : andiElis official"
+echo "github    : git clone https://github.com/ArroKM/Spam_Sms"
+echo "----------__________-----------"
+echo
+echo " pilih menu "
+echo " [1] spam_Sms [WA]"
+echo " [2] spamSms "
+echo " [3] spammer "
+echo " [4] install bahan"
+echo
+read -p " [?] pilih : " pil :
+# batas gan
+if [ $pil = 1 ]
+then
+git clone https://github.com/ArroKM/Spam_Sms
+cd Spam_Sms
+python run.py
+fi
+# batas gan
+if [ $pil = 2 ]
+then
+git clone https://github.com/BladeKnife/2otp
+cd 2otp
+python spam.py
+fi
+# batas gan
+if [ $pil = 3 ]
+then
+git clone https://github.com/hekelpro/spammer
+cd spammer
+python2 spammer.py
+fi
+# batas gan
+if [ $pil = 4 ]
+then
+pkg update && pkg upgrade
+pkg install nano
+pkg install python
+pkg install git
+pkg install python2
+pip install requests mechanize
+pip2 install requests mechanize
+pkg install php
+fi
